@@ -9,7 +9,8 @@
   <body>
     <main>
       <h1>Dice Generator</h1>
-      <div>
+      <div class="flex">
+      <aside>
         <h2>Select your dice.</h2>
         <ul class="diceContaine" id="diceBox">
           <li><button class="dice" id="D4">D4</button></li>
@@ -19,16 +20,15 @@
           <li><button class="dice" id="D12">D12</button></li>
           <li><button class="dice" id="D20">D20</button></li>
         </ul>
-      </div>
+      </aside>
       <section>
         <h2>Selected Dice.</h2>
         <p id="selectedDiceDisplay">None selected</p>
         <button id="rollButton">Roll Dice</button>
-      </section>
-      <aside>
         <h2>Roll result</h2>
         <p id="ResultDisplay">No roll yet</p>
-      </aside>
+      </section>
+      </div>
     </main>
     <script src="script.js"></script>
   </body>
