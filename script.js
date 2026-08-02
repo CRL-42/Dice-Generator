@@ -36,7 +36,7 @@ function selectDice(diceType) {
         // Update "Selected Dice".
         const displayArea = document.getElementById("selectedDiceDisplay");
         if (displayArea) {
-            displayArea.textContent = `Selected: ${selectedDiceName}`;
+            displayArea.textContent = `${selectedDiceName}`;
         }
     }
 }
@@ -58,6 +58,6 @@ function rollDice() {
   const rollResult = getRandomIntInclusive(...selectedDiceRange);
 
   if (resultDisplay) {
-    resultDisplay.textContent = `Rolled: ${rollResult}`;
+    resultDisplay.textContent = `${rollResult}`;
   }
 }
